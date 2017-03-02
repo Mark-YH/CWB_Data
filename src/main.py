@@ -6,6 +6,7 @@ Created on 2017-03-01
 '''
 import requests
 import tableToList
+import stationCode
 from percentEncoding import uri_encoder
 
 def main():
@@ -26,6 +27,7 @@ def main():
         print(row)
         for col in result[i]:
             print(col)
+
 
 if __name__ == '__main__':
     main()
