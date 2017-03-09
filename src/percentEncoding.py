@@ -6,8 +6,8 @@ Created on 2017-03-01
 '''
 import urllib.parse
 
-def uri_decoder(encoded_uri):
+def decode(encoded_uri):
     return urllib.parse.unquote(encoded_uri)
 
-def uri_encoder(decoded_uri):
+def encode(decoded_uri):
     return urllib.parse.quote(decoded_uri)
