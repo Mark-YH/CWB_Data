@@ -12,7 +12,7 @@ import csv
 import time
 def saveToCsv(result, date, stationId):
     try:
-        filepath = 'model/'
+        filepath = '../model/'
         filepath += stationId + '_'
         filepath += date + '.csv'
         with open(filepath, 'w', encoding='utf-8') as csvfile:
