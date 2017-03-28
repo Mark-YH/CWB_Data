@@ -1,9 +1,9 @@
 # coding: UTF-8
-'''
-Created on 2017-03-01
+"""
+Created on 2017/03/01
 
 @author: Mark Hsu
-'''
+"""
 import requests
 import tableToList
 import stationCode
@@ -12,7 +12,7 @@ import csv
 import time
 def saveToCsv(result, date, stationId):
     try:
-        filepath = '../model/'
+        filepath = '../data/output/'
         filepath += stationId + '_'
         filepath += date + '.csv'
         with open(filepath, 'w', encoding='utf-8') as csvfile:

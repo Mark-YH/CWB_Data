@@ -1,9 +1,9 @@
 # coding: UTF-8
-'''
-Created on 2017-03-01
+"""
+Created on 2017/03/01
 
 @author: Mark Hsu
-'''
+"""
 import csv
 
 def getStation(county):
@@ -11,7 +11,7 @@ def getStation(county):
     @param {str} county name
     @return {list} if the file exists else return exception error.  
     '''
-    filepath = '../model/station information/CWB Station Code utf8 county.csv'
+    filepath = '../data/station information/CWB Station Code utf8 county.csv'
     filepath = filepath.replace('county', county)
     try:
         with open(filepath, 'r', encoding='utf-8') as csvfile:
@@ -31,9 +31,9 @@ def select(county):
     @param {str} county name
     @return {boolean} if succeeded return True
     '''
-    filepath = '../model/station information/CWB Station Code utf8 county.csv'
+    filepath = '../data/station information/CWB Station Code utf8 county.csv'
     try:
-        with open('../model/station information/CWB Station Code utf8.csv', encoding='utf-8') as csvfile:
+        with open('../data/station information/CWB Station Code utf8.csv', encoding='utf-8') as csvfile:
             filepath = filepath.replace('county', county)
             result = []
             for row in csv.DictReader(csvfile):

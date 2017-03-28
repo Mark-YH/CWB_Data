@@ -1,9 +1,9 @@
 # coding: UTF-8
-'''
-Created on 2017-03-01
+"""
+Created on 2017/03/01
 
 @author: Mark Hsu
-'''
+"""
 import urllib.parse
 
 def decode(encoded_uri):

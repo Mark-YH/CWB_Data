@@ -2,4 +2,5 @@
 src/__pycache__/*
 .project
 .pydevproject
-model/*.csv
+data/output/*
+.idea/*
